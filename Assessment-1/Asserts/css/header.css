@@ -18,6 +18,7 @@ float: inherit;
     overflow: hidden;
   }
   
+  
   .topnav a {
     float: left;
     color: #7800BA;
@@ -38,6 +39,8 @@ float: inherit;
     background-color: #D18CE0 ;
     color: white;
   }
+
+  
   .donatebtn{
       background-color: greenyellow;
       color: #7800BA;
@@ -45,5 +48,10 @@ float: inherit;
       font-size: 20px;
       text-align: center; 
       padding: 15px 32px;
-    
   }
+
+   .social{
+    width: 40px;
+    padding: 10px;
+   }
+    
