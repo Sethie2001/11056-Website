@@ -7,30 +7,59 @@
    text-align: center;
   
  }
- .Aboutus{  
-    margin-left: 5%;
-    margin-top: 5%;
- }
  .headingabout{
+   font-weight: bolder;
    font-size: 30px;
- }
+   text-align: left;
+   
+   
+ } 
  .paragraphinfo{
+    font-size: 20px;
+    text-align: justify;    
+   line-height: auto;
+   width: auto;
+    
+ }
+ .paragraphinfo b{
+    font-size: 25px;
+   line-height: 50px;
+    
+ }
+ .cellsize{
+    width: 200px;
+    padding: 30px;
+ }
+ 
+
+ .peopleimg{
+    width: 100%;
+ }
+ .aboutimg{
+    width:100px;
+ }
+ 
+ table.aboutalign{
+   margin-top: 50px;
+   margin-left: 100px;
+   margin-right: auto;
+ }
+ 
+
+ table.center{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .center td{
+    width: 400px;
+ }
+ .Nametitle{
+    text-decoration: underline;
+    font-weight: bold;
     font-size: 20px;
  }
 
- .aboutimg{
-    float: right;
-    width: 100px;
- }
- .imgtext{
-    text-align: justify;
-    width: 100%;
-
- }
- .imgtext img{
-    display: block;
-    margin:  0 auto;
- }
+ 
 .multiplemap{
    float: left;
    margin-left: 10%;
