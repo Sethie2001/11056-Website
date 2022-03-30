@@ -7,10 +7,29 @@
    text-align: center;
   
  }
- .Aboutus{
-    float: left;
-    font-size: 30px;
-    margin: 5%;
+ .Aboutus{  
+    margin-left: 5%;
+    margin-top: 5%;
+ }
+ .headingabout{
+   font-size: 30px;
+ }
+ .paragraphinfo{
+    font-size: 20px;
+ }
+
+ .aboutimg{
+    float: right;
+    width: 100px;
+ }
+ .imgtext{
+    text-align: justify;
+    width: 100%;
+
+ }
+ .imgtext img{
+    display: block;
+    margin:  0 auto;
  }
 .multiplemap{
    float: left;
