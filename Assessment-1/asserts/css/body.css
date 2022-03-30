@@ -1,0 +1,40 @@
+#homevideo{
+   position:relative;
+  min-width: 100%;
+  min-height: 50%;
+}
+.importntinfo{
+   text-align: center;
+  
+ }
+ .Aboutus{
+    float: left;
+    font-size: 30px;
+    margin: 5%;
+ }
+.multiplemap{
+   float: left;
+   margin-left: 10%;
+   margin-top: 2%;
+   margin-bottom: 2%;
+
+   }
+ 
+.map{
+    width: 400px;
+    height: 300px;
+    border: 0;   
+}
+
+
+
+@media screen and  (max-width: 500px) {
+   #homevideo{
+      width: 200px;
+
+   }
+   .map{
+      width:100px;
+      height: 100px;
+   }
+}
