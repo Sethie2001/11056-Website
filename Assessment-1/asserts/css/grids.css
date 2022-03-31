@@ -12,17 +12,21 @@
     background-color: bisque;
    
   }
-  .header { grid-area: header; }
+  .header {
+       grid-area: header; 
+    }
 .menu { grid-area: menu; }
 .main  { 
     grid-area: main; 
     background-color: lightblue;
 }
 .main2 {
+    padding: 20px;
     grid-area: main2;
     background-color: #FEFD9A;
 }
 .main3{ 
+    padding: 20px;
     grid-area: main3; 
     background-color: lightblue;
 }

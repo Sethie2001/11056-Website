@@ -61,11 +61,16 @@
 
  
 .multiplemap{
-   float: left;
-   margin-left: 10%;
-   margin-top: 2%;
-   margin-bottom: 2%;
+   margin-left: auto;
+   margin-right: auto;
+   height: 400px;
+   width: 500px;
+   
 
+   }
+   .multiplemap td{
+      font-size: 20px;
+      text-align: center;
    }
  
 .map{
@@ -75,12 +80,50 @@
 }
 
 
+table.footercontent{
+table-layout: auto;
+width: 100%; 
 
-@media screen and  (max-width: 500px) {
+}
+.footerleft{
+   text-align: left;
+   width:70%;
+}
+.footerright{
+   text-align: left;
+   
+}
+.footerright img{
+  width: 25%;
+  padding: 10px;
+  float:left;
+}
+table.imggallery{
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.imggallery img{
+  width: 100%;
+   
+}
+
+
+@media screen and  (max-width: 670px ) {
    #homevideo{
       width: 200px;
 
    }
+   .paragraphinfo{
+      text-align: left;
+      width:400px;
+
+   }
+   .paragraphinfo b{
+      font-size: 20px;
+      line-height: 0;
+   }
+
    .map{
       width:100px;
       height: 100px;
