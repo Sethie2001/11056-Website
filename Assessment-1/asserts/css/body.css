@@ -3,10 +3,7 @@
   min-width: 100%;
   min-height: 50%;
 }
-.importntinfo{
-   text-align: center;
-  
- }
+
  .headingabout{
    font-weight: bolder;
    font-size: 30px;
@@ -15,8 +12,8 @@
    
  } 
  .paragraphinfo{
-    font-size: 20px;
-    text-align: justify;    
+   font-size: 20px;
+   text-align: justify;    
    line-height: auto;
    width: auto;
     
@@ -49,10 +46,13 @@
  table.center{
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 50px;
  }
+ 
  .center td{
     width: 400px;
  }
+ 
  .Nametitle{
     text-decoration: underline;
     font-weight: bold;
@@ -87,7 +87,8 @@ width: 100%;
 }
 .footerleft{
    text-align: left;
-   width:70%;
+   width:60%;
+   
 }
 .footerright{
    text-align: left;
@@ -107,6 +108,70 @@ table.imggallery{
   width: 100%;
    
 }
+.main3 h3{
+   text-align: center;
+   text-decoration:underline;
+   font-size: 2em;
+}
+
+.previousbtn{
+   background-color: rgb(68, 47, 255);
+   color: white;
+   border: 50px;
+   font-size: 20px;
+   text-align: center; 
+   padding: 15px 32px;
+   float: left;
+}
+.Nowbtn{
+   background-color: gold;
+   color: white;
+   border: 50px;
+   font-size: 20px;
+   text-align: center; 
+   padding: 15px 32px;
+   float: right;
+}
+/*CSS for mostly festival page*/
+.event{
+   text-align: center;
+   float: inherit;
+   padding: 25px;
+}
+.event table{
+   margin-top: 10px;
+   margin-left: 15%;
+   float: left;
+   text-align: left;   
+   width: 50%;
+  
+}
+.event th{
+   font-size: 25px;
+}
+.event td{
+   text-align: justify;
+   font-size: 20px;
+   padding:5px;
+}
+.event img{
+   width:25%;
+   border: 5px solid blue;
+   float: right;
+   margin-right: 5%;
+   margin-bottom: 10px;
+}
+
+.heading {
+   font-size: 30px;
+   font-weight: bolder;
+}
+.subheading{
+   font-size: 25px;
+}
+
+
+/*Festival CSS END*/
 
 
 @media screen and  (max-width: 670px ) {
@@ -125,7 +190,6 @@ table.imggallery{
    }
 
    .map{
-      width:100px;
-      height: 100px;
+      display: none;
    }
 }
