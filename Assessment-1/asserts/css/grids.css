@@ -1,5 +1,5 @@
 
-
+/*Grids - Main layout for the webpage*/
 .grid-container{
     display: grid;
     grid-template-areas:
@@ -15,7 +15,6 @@
   .header {
        grid-area: header; 
     }
-.menu { grid-area: menu; }
 .main  { 
     grid-area: main; 
     background-color: lightblue;
@@ -30,11 +29,39 @@
     grid-area: main3; 
     background-color: lightblue;
 }
-.right { grid-area: right; }
 .footer { 
     grid-area: footer; 
     background-color: yellow;
 }
 
+/*Flex-box*/
+.flex-container{
+    /*Set display of the container, for this one flex, 
+    while above would have been grid*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.peoplelibary{
+    /*Flex syle create how many item can fit on the row, 
+    lower the item more items fit on the row and higher less items */
+    flex:0 24% ; 
+    height: auto;
+    margin-bottom: 15%;
+    text-align: justify;
+}
+.imggallery-item{
+    flex:0 30% ; 
+    height: auto;
+}
 
 
+
+.flex-infocontainer{
+    display: flex; 
+    justify-content: center;  
+    margin: 2%; 
+}
+.infoitem{
+    width: 500px;    
+}

@@ -18,6 +18,7 @@
    width: auto;
     
  }
+
  .paragraphinfo b{
     font-size: 25px;
    line-height: 50px;
@@ -33,7 +34,10 @@
     width: 100%;
  }
  .aboutimg{
-    width:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   width: 30%;
  }
  
  table.aboutalign{
@@ -78,6 +82,9 @@
     height: 300px;
     border: 0;   
 }
+.imggallery{
+   width: 100%;
+}
 
 
 table.footercontent{
@@ -99,15 +106,7 @@ width: 100%;
   padding: 10px;
   float:left;
 }
-table.imggallery{
-   margin-left: auto;
-   margin-right: auto;
 
-}
-.imggallery img{
-  width: 100%;
-   
-}
 .main3 h3{
    text-align: center;
    text-decoration:underline;
@@ -168,6 +167,13 @@ table.imggallery{
 }
 .subheading{
    font-size: 25px;
+}
+.flex-infocontainer .subheading{
+   text-align: center;
+}
+.flex-infocontainer .heading{
+   line-height: auto;
+   text-align: center;
 }
 
 
