@@ -1,6 +1,9 @@
 
 /*Grids - Main layout for the webpage*/
 .grid-container{
+    /*Setting up the layout of the gird,
+    Set each area down the webgae to be 
+    different section, header all the way to Footer*/
     display: grid;
     grid-template-areas:
     'header header header header header header'
@@ -14,6 +17,7 @@
   }
   .header {
        grid-area: header; 
+       background-color: yellow;
     }
 .main  { 
     grid-area: main; 
@@ -50,18 +54,47 @@
     margin-bottom: 15%;
     text-align: justify;
 }
+/*Slightly different flexbox option to work
+better with the phto gallery*/
 .imggallery-item{
     flex:0 30% ; 
     height: auto;
 }
 
-
-
+/*Flex box for the infomation section
+this flex box countiune to make new box in the same row.*/
 .flex-infocontainer{
     display: flex; 
     justify-content: center;  
     margin: 2%; 
 }
+
 .infoitem{
     width: 500px;    
+}
+
+.flex-infotextonly{
+    display: flex;
+    /*Setting the flexbox to go downward ranther than cross.*/
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.flex-infotextonly .infoitem{
+   width: 50%;
+   text-align: justify;
+   
+}
+
+.flex-Map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.map-item{
+    width: 32%;
+    padding-bottom: 18%;
+    margin-bottom: 2%
 }

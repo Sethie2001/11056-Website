@@ -19,16 +19,11 @@
     
  }
 
- .paragraphinfo b{
+ .paragraphinfo em{
     font-size: 25px;
    line-height: 50px;
     
- }
- .cellsize{
-    width: 200px;
-    padding: 30px;
- }
- 
+ } 
 
  .peopleimg{
     width: 100%;
@@ -38,24 +33,7 @@
     margin-left: auto;
     margin-right: auto;
    width: 30%;
- }
- 
- table.aboutalign{
-   margin-top: 50px;
-   margin-left: 100px;
-   margin-right: auto;
- }
- 
-
- table.center{
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 50px;
- }
- 
- .center td{
-    width: 400px;
- }
+ } 
  
  .Nametitle{
     text-decoration: underline;
@@ -63,19 +41,6 @@
     font-size: 20px;
  }
 
- 
-.multiplemap{
-   margin-left: auto;
-   margin-right: auto;
-   height: 400px;
-   width: 500px;
-   
-
-   }
-   .multiplemap td{
-      font-size: 20px;
-      text-align: center;
-   }
  
 .map{
     width: 400px;
@@ -137,22 +102,7 @@ width: 100%;
    float: inherit;
    padding: 25px;
 }
-.event table{
-   margin-top: 10px;
-   margin-left: 15%;
-   float: left;
-   text-align: left;   
-   width: 50%;
-  
-}
-.event th{
-   font-size: 25px;
-}
-.event td{
-   text-align: justify;
-   font-size: 20px;
-   padding:5px;
-}
+
 .event img{
    width:25%;
    border: 5px solid blue;
@@ -168,12 +118,23 @@ width: 100%;
 .subheading{
    font-size: 25px;
 }
+
 .flex-infocontainer .subheading{
    text-align: center;
 }
 .flex-infocontainer .heading{
    line-height: auto;
    text-align: center;
+}
+.flex-infotextonly .heading{
+   margin: 2%;
+   text-align: center;
+}
+.flex-infotextonly .paragraphinfo{
+   margin: 1%;
+}
+.flex-infocontainer .flex-infotextonly .paragraphinfo{
+   text-align: c;
 }
 
 
