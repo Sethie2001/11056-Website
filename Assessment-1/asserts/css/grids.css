@@ -17,25 +17,25 @@
   }
   .header {
        grid-area: header; 
-       background-color: yellow;
+       background-color: #303179;
     }
 .main  { 
     grid-area: main; 
-    background-color: lightblue;
+    background-color: #fae5df;
 }
 .main2 {
     padding: 20px;
     grid-area: main2;
-    background-color: #FEFD9A;
+    background-color: #eee0e0;
 }
 .main3{ 
     padding: 20px;
     grid-area: main3; 
-    background-color: lightblue;
+    background-color: #fae5df;
 }
 .footer { 
     grid-area: footer; 
-    background-color: yellow;
+    background-color: #303179;
 }
 
 /*Flex-box*/
@@ -53,6 +53,7 @@
     height: auto;
     margin-bottom: 15%;
     text-align: justify;
+    color: #303179;
 }
 /*Slightly different flexbox option to work
 better with the phto gallery*/
@@ -69,9 +70,12 @@ this flex box countiune to make new box in the same row.*/
     margin: 2%; 
 }
 
+
 .infoitem{
     width: 500px;    
 }
+
+
 
 .flex-infotextonly{
     display: flex;
@@ -87,14 +91,18 @@ this flex box countiune to make new box in the same row.*/
    
 }
 
-.flex-Map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex-footer{
+    display: flex; 
+    flex-flow: row wrap;
+    align-content: flex-start;
+    margin: 2%;  
+    text-align: justify;
+}
+.flex-footer .infoitem{
+    width: calc(50% - 9px);
+    margin: 0 5px 10px 0;
+    
+}
 
-}
-.map-item{
-    width: 32%;
-    padding-bottom: 18%;
-    margin-bottom: 2%
-}
+
+

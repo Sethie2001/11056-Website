@@ -1,5 +1,27 @@
+
+.heading {
+   font-size: 30px;
+   font-weight: bolder;
+}
+.subheading{
+   font-size: 25px;
+}
+
+.paragraphinfo{
+   font-size: 20px;
+   text-align: justify;    
+   line-height: auto;
+   width: auto;
+    
+ }
+
+ .paragraphinfo em{
+    font-size: 25px;
+   line-height: 50px;    
+ } 
+
 #homevideo{
-   position:relative;
+  position:relative;
   min-width: 100%;
   min-height: 50%;
 }
@@ -11,19 +33,6 @@
    
    
  } 
- .paragraphinfo{
-   font-size: 20px;
-   text-align: justify;    
-   line-height: auto;
-   width: auto;
-    
- }
-
- .paragraphinfo em{
-    font-size: 25px;
-   line-height: 50px;
-    
- } 
 
  .peopleimg{
     width: 100%;
@@ -34,6 +43,23 @@
     margin-right: auto;
    width: 30%;
  } 
+ .footerimg{
+    display: inline;
+    height: 50%;
+    padding: 3%;
+    float: right;
+ }
+.flex-infotextonly .paragraphinfo .aboutimg{
+   
+   border: solid blue 10px;
+   width: 40%;
+   
+}
+ 
+ .imggallery{
+   width: 100%;
+}
+
  
  .Nametitle{
     text-decoration: underline;
@@ -47,30 +73,8 @@
     height: 300px;
     border: 0;   
 }
-.imggallery{
-   width: 100%;
-}
 
 
-table.footercontent{
-table-layout: auto;
-width: 100%; 
-
-}
-.footerleft{
-   text-align: left;
-   width:60%;
-   
-}
-.footerright{
-   text-align: left;
-   
-}
-.footerright img{
-  width: 25%;
-  padding: 10px;
-  float:left;
-}
 
 .main3 h3{
    text-align: center;
@@ -111,14 +115,6 @@ width: 100%;
    margin-bottom: 10px;
 }
 
-.heading {
-   font-size: 30px;
-   font-weight: bolder;
-}
-.subheading{
-   font-size: 25px;
-}
-
 .flex-infocontainer .subheading{
    text-align: center;
 }
@@ -137,26 +133,28 @@ width: 100%;
    text-align: c;
 }
 
+.flex-footer .donatebtn{
+  margin-top: 2%;
+}
 
-/*Festival CSS END*/
+.main .infoitem, .main2, .main3{
+   color: #303179;
+}
+
+.footer h3{
+   text-align: right;
+   margin-top: 0;
+   padding-bottom: 0;
+   font-weight: lighter;
+}
+.footer h4{
+  font-size: 23px;
+  margin-bottom: -2%;
+
+}
+@media screen and  (max-width: 400px ) {
+  
+   
 
 
-@media screen and  (max-width: 670px ) {
-   #homevideo{
-      width: 200px;
-
-   }
-   .paragraphinfo{
-      text-align: left;
-      width:400px;
-
-   }
-   .paragraphinfo b{
-      font-size: 20px;
-      line-height: 0;
-   }
-
-   .map{
-      display: none;
-   }
 }
