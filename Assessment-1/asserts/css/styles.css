@@ -267,7 +267,6 @@ propeties in the class, the width and the margin*/
  .paragraphinfo{
     font-size: 20px;
     text-align: justify;    
-    line-height: auto;
     width: auto;
      
   }
@@ -371,7 +370,6 @@ propeties in the class, the width and the margin*/
     text-align: center;
  }
  .flex-infocontainer .heading{
-    line-height: auto;
     text-align: center;
  }
  .flex-infotextonly .heading{
@@ -382,7 +380,7 @@ propeties in the class, the width and the margin*/
     margin: 1%;
  }
  .flex-infocontainer .flex-infotextonly .paragraphinfo{
-    text-align: c;
+    text-align: center;
  }
  
  .flex-footer .donatebtn{
@@ -464,6 +462,12 @@ under eiter*/
 .content h2{
   margin-bottom: -1%;
 }
+.content h2 h4 p{
+  text-align: justify;
+}
+.content img{
+  height: 300px;
+}
 .collapsible-content {
   max-height: 0px;
   overflow: hidden;
@@ -523,7 +527,6 @@ the site changes to fit screen*/
     }
    #homevideo{
      min-width: 50%;
-     min-height: none;
     
    }
     
