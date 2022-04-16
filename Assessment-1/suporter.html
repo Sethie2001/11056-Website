@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="asserts/css/grids.css"> 
-    <link rel="stylesheet" href="asserts/css/header.css"> 
-    <link rel="stylesheet" href="asserts/css/body.css">
+    <link rel="stylesheet" href="asserts/css/styles.css"> 
+    <script type="text/javascript" src="asserts/Javascript/script.js"></script>
     <title>Art Biennial 556 - Supporter & Donate</title>
 </head>
  <body>
@@ -29,7 +28,7 @@
                 </div>
             </div>
 
-            <div class= "navbar">
+            <div class= "navbar" id="mynavbar">
                 <a  href="index.html" > Home</a>
                 <div class = "dropdown">                            
                     <button class="dropbtn active">About US</button>
@@ -42,12 +41,38 @@
                 <button class="dropbtn">Festival</button>
                     <div class="dropdown-content">
                         <a href="festival.html">Current Event</a>
-                        <a href="#previous">Previous Events</a>
+                        <a href="previous.html">Previous Events</a>
                     </div>
                  </div>
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
         <div class="main">
+            
+                <form> 
+                    <div class="heading">Donate Now, Support Us</div>            
+                    <label for="dname">Name: </label>
+                    <input type="text" id="dname" name="dname" value="Neil Hobbs"><br/>   
+                    <label for="dmail">Email: </label>  
+                    <input type="text" id="dmail" name="dmail" value="Neil.Example@gmail.com"><br/>
+                    Would you like to recive email from us?<br/>                
+                    <input type="radio" id="yes" name="contactlist" value="Yes">
+                    <label for="yes">Yes</label> <br/>
+                    <input type="radio" id="no" name="contactlist" value="No">
+                    <label for="no">No</label> <br/>
+             
+                
+                    <label for="acknowledged"> How would you like to be acknowledged?</label><br/>
+                        <select id="acknowledged" name="acknowledged">
+                            <option value="sname">By Name</option>
+                            <option value="Anonymous">Anonymous</option>
+                        </select><br/>
+                    <label for="amout">Amount of Money would like to Donate:</label><br/>
+                    <input type="number" id="amout" name="amout" min="1" max="9999999"><br/>
+                    <label for="message">Message for your donation</label><br/>
+                    <textarea name="message" rows="10" cols="30"></textarea> <br/>
+                    <input type="submit" class="donatebtn" value="DONATE">
+            </form>  
             <div class="flex-infotextonly">
                 <div class="infoitem heading"> A Donation make the Art and Festival Possible </div>
                 <div class="infoitem  paragraphinfo">
@@ -66,11 +91,9 @@
                 Please respond if you would like to be added to our contact list.
                 Donations are tax deductible Your donations will directly support artists, ensuring their participation in this significant international event.
                 </div>
-            </div>
-                
-            
+           
+            </div>       
         </div>
-
         <div class="main2">
             <div class="flex-infotextonly">
                 <div class="infoitem heading"> 
