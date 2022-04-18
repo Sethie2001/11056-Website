@@ -43,28 +43,28 @@ a{
   }
   /*Setting a class for each section of grid and
   assigning a background colour */
-  .header {
+#header {
        grid-area: header; 
        background-color: #303179;
     }
-.main  { 
+#main  { 
     grid-area: main; 
     background-color: #fae5df;
     color: #303179;
 }
-.main2 {
+#main2 {
     padding: 20px;
     grid-area: main2;
     background-color: #eee0e0;
     color: #303179;
 }
-.main3{ 
+#main3{ 
     padding: 20px;
     grid-area: main3; 
     background-color: #fae5df;
     color: #303179;
 }
-.footer { 
+#footer { 
     grid-area: footer; 
     background-color: #303179;
 }
@@ -118,7 +118,6 @@ this flex box countiune to make new box in the same row.*/
 
 .flex-infotextonly .infoitem{
    width: 50%;
-   text-align: justify;
    
 }
 /*Footer Flex, split the box to be on both side of
@@ -146,9 +145,7 @@ colour*/
 .navbar {
   overflow: hidden;
   background-color: #1d236f;
-  
-  
-}
+  }
  /*Navbar a, set all the links and the propties need for each*/
 .navbar a {
   float: left;
@@ -217,9 +214,8 @@ colour*/
 }
 /*making the nav bar stay on screen when scrolling*/
 .sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: sticky;
+	top: 0;
 }
 
 
@@ -395,22 +391,22 @@ the h and p tag*/
    margin-top: 2%;
  }
  
- .main .infoitem, .main2, .main3{
+ #main .infoitem, #main2, #main3{
     color: #303179;
  }
  
- .footer h3{
+ #footer h3{
     text-align: right;
     margin-top: 0;
     padding-bottom: 0;
     font-weight: lighter;
  }
- .footer h4{
+ #footer h4{
    font-size: 23px;
    margin-bottom: -2%;
  }
 
- .footer a:visited{
+ #footer a:visited{
     color: #e11e00;
     text-decoration:line-through;
 }
@@ -437,7 +433,8 @@ Hide the checkbox item from page*/
 input[type='checkbox']{
   display: none;
 }
-
+/*main propties for making the label fancy
+changing colour and change text format*/
 .lbl-toggle{
   display: block;
   font-weight: bold;
@@ -446,24 +443,31 @@ input[type='checkbox']{
   padding: 2%;
   color: #1d236f;
   background: #ed7966;
+  /*setting cursor to be pointer, so user knows to click on the box*/
   cursor: pointer;
   border-radius: 7px;
 }
-
+/*Before selector does something before the section is loaded
+The class is setting the little arrow that goes next to the text.
+*/
 .lbl-toggle::before {
   content: ' ';
   display: inline-block;
+/*Each of the border option is drawing in the arrow before the
+text, to show the content is close*/
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid currentColor;
-
+/*This section align the arrow, in the correct postion on
+the tab*/
   vertical-align: middle;
-  margin-right: .7rem;
+  margin-right: .7%;
   transform: translateY(-2px);
 
   transition: transform .2s ease-out;
 }
-
+/*pad the space around the main content, take the main content
+away for the e*/
 .collapsible-content .content{
   padding: 2%;
 }
@@ -497,16 +501,13 @@ under eiter*/
   background-color: #eebcb4;
   transition: max-height .25s ease-in-out;
 }
+/*allows the content to open fully*/
 .toggle:checked + .lbl-toggle + .collapsible-content {
   max-height: 100%;
 }
+/*Rotate the pointer to point doward when content box is open*/
 .toggle:checked + .lbl-toggle::before {
   transform: rotate(90deg) translateX(-3px);
-}
-
-.toggle:checked + .lbl-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 #festivalsub{
@@ -528,12 +529,13 @@ under eiter*/
 
 
 
+
 /*When the screen is below 600px width size,
 the site changes to fit screen*/
- @media screen and  (max-width: 600px ) {
+ @media screen and  (max-width: 610px ) {
    /*all the a tag in nav but the first tag (which is home) change
    display to none and is no longer visable*/
-   .navbar a:not(:first-child),.dropdown .dropbtn, .header .flex-footer a:not(:first-child), .header .donatebtn{
+   .navbar a:not(:first-child),.dropdown .dropbtn, #header .flex-footer a:not(:first-child), #header .donatebtn{
      display: none;
    }
    /*The resopisive sandwitch icon appear in the place of the other
@@ -569,13 +571,25 @@ the site changes to fit screen*/
      min-width: 50%;
     
    }
+   .paragraphinfo, .subheading , .heading{
+     text-align: left;
+   }
     
   }
+  /*Some changes needed for even smaller screen*/
   @media screen and  (max-width: 400px ){
+    /*Moving everything on the right more to the left*/
     #end-edge{
       margin-right: 20%;
     }
+    #suportercol{
+      margin-right: 25%;
+    }
     .navbar a.icon{
       float:none;
+    }
+    #gallerybtn{
+      width: 50%;
+      margin-left: 15%;
     }
   }

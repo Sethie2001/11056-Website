@@ -9,7 +9,7 @@
 </head>
  <body>
     <div class="grid-container">
-        <div class="header">
+        <div id="header">
             <div class="flex-footer">
                 <div class="infoitem">
                 <a href="index.html"><img src="asserts/image/logowhite.png" alt="logo Image"></a>
@@ -47,7 +47,7 @@
                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
-        <div class="main">
+        <div id="main">
             <div class="flex-infotextonly">
                 <div class="infoitem heading">
                     <div>Festivals of Contour</div>
@@ -61,8 +61,12 @@
                 </div>
             </div> 
         </div>  
-        <div class="main2">
+        <div id="main2">
+            <!--This section will show all the previous artwork from the festival
+            and breif overview of the artist-->
+
             <div class="subheading" id="collab-headding">All the Different Years and Artwork from the Festival:</div>
+                <!--setting a input tag so the label is connect to something, the input=checkbox is hidden in website -->
                 <input id="collapsible" class="toggle" type="checkbox">
                 <label for="collapsible" class="lbl-toggle">2020</label>
                 <div class="collapsible-content">
@@ -245,7 +249,7 @@
                 </div>
         </div>
 
-        <div class="footer">
+        <div id="footer">
             <div class="flex-footer">
                 <div class="infoitem">
                     <div class="subheading">About The Festival</div>
