@@ -579,10 +579,10 @@ the site changes to fit screen*/
   /*Some changes needed for even smaller screen*/
   @media screen and  (max-width: 400px ){
     /*Moving everything on the right more to the left*/
-    #end-edge{
+    .end-edge{
       margin-right: 20%;
     }
-    #suportercol{
+    .suportercol{
       margin-right: 25%;
     }
     .navbar a.icon{
