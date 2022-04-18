@@ -1,3 +1,5 @@
+/*Defining all the main propeties for site,
+The font size, font, etc*/
 body{
     margin: 0;
     padding: 0;
@@ -39,6 +41,8 @@ a{
    
    
   }
+  /*Setting a class for each section of grid and
+  assigning a background colour */
   .header {
        grid-area: header; 
        background-color: #303179;
@@ -97,7 +101,7 @@ this flex box countiune to make new box in the same row.*/
     margin: 2%; 
 }
 
-
+ /*The basic item for the flexbox, flex-infocontainer*/
 .infoitem{
     width: 500px;    
 }
@@ -136,13 +140,16 @@ propeties in the class, the width and the margin*/
     
 }
 
-/*Main Header item CSS begins*/
+/*Main Header item CSS begins
+The navbar class set the basic info for the whole navbar, mainly the background
+colour*/
 .navbar {
   overflow: hidden;
   background-color: #1d236f;
   
   
 }
+ /*Navbar a, set all the links and the propties need for each*/
 .navbar a {
   float: left;
   margin-left: 2%;
@@ -154,11 +161,9 @@ propeties in the class, the width and the margin*/
   font-size: 25px;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.navbar a.active, button.active {
+ /*When user is currently on the page, that page link is shown in different colour 
+ plus underline.*/
+.navbar a.active, button.active, .dropdown a.active, .dropbtn.active{
   text-decoration: underline;	
   background-color: #3e4491;
   color: #fae5df;
@@ -181,7 +186,8 @@ propeties in the class, the width and the margin*/
   margin: 0; 
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+ /*when the mouse hover a link tag, the text become underlined*/
+.navbar a:hover, .dropdown:hover .dropbtn,.dropdown-content a:hover {
   text-decoration: underline;
 }
 /* Drop down meun for the about contel */
@@ -202,9 +208,7 @@ propeties in the class, the width and the margin*/
   display: block;
   text-align: left;
 }
-.dropdown-content a:hover {
- text-decoration: underline;
-}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -219,12 +223,13 @@ propeties in the class, the width and the margin*/
 }
 
 
-  
+  /*a tag styling to look more like a button*/
   .donatebtn{
       background-color: rgb(253, 235, 238);
       color: #141850;
       border-radius: 30px;
       font-size: 20px;
+       /*Different font for the button to stand out more and look better*/
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       text-transform: uppercase;
       font-weight: bolder;
@@ -233,18 +238,33 @@ propeties in the class, the width and the margin*/
       float: right;
        
   }
-
+ /*button hover, change colour*/
   .donatebtn:hover{
       text-decoration: solid;
       background-color:#ed7966 ;
       color: blue;
   }
+  #gallerybtn{
+    float: none;
+    display: block;
+    background-color:#141850 ;
+    color:#eebcb4;
 
+  }
+  #gallerybtn:hover{
+    text-decoration: solid;
+    background-color:#3641d1 ;
+    color: rgb(208, 164, 77);
+  }
+ /*Seprate social button class, to change size of image and fix
+ layout on the screen*/
    .social{
     width: 40px;
     padding: 10px;
-    float: right;    
+    float: right;
+     /*Move it slightly away from the top*/    
     margin-top: 2%;
+     /*move it slightly away from the donate button, leaving reasonable space*/
     margin-right: 2%;
    }
 
@@ -254,7 +274,9 @@ propeties in the class, the width and the margin*/
   .socialgroup .social{
     float: none;
   }
-/*Main Body CSS begins*/
+/*Main Body CSS begins
+Setting seprate heading, and paragraph tag so able more freely use text and not relaie on 
+the h and p tag*/
   
 .heading {
     font-size: 30px;
@@ -275,26 +297,29 @@ propeties in the class, the width and the margin*/
      font-size: 25px;
     line-height: 50px;    
   } 
- 
+
  #homevideo{
    position:relative;
+    /*Setting the min-width to be 100% so it cover the whole
+    screen*/
    min-width: 100%;
    min-height: 50%;
  }
  
-  .headingabout{
+ .headingabout{
     font-weight: bolder;
     font-size: 30px;
     text-align: left;
     
     
   } 
- 
+  /*different classes to set size to all the image*/
   .peopleimg{
      width: 100%;
   }
   .aboutimg{
      display: block;
+     margin-top: 10%;
      margin-left: auto;
      margin-right: auto;
     width: 30%;
@@ -302,7 +327,9 @@ propeties in the class, the width and the margin*/
  
  .flex-infotextonly .paragraphinfo .aboutimg{
     
-    border: solid blue 10px;
+    border: solid #1d236f 10px;
+    margin-top: 0;
+    margin-bottom: 2%;
     width: 40%;
     
  }
@@ -310,23 +337,19 @@ propeties in the class, the width and the margin*/
   .imggallery{
     width: 100%;
  }
- 
-  
+   
   .Nametitle{
      text-decoration: underline;
      font-weight: bold;
      font-size: 20px;
   }
- 
-  
+   
  .map{
      width: 400px;
      height: 300px;
      border: 0;   
  }
- 
- 
- 
+  
  .main3 h3{
     text-align: center;
     text-decoration:underline;
@@ -351,20 +374,6 @@ propeties in the class, the width and the margin*/
     padding: 15px 32px;
     float: right;
  }
- /*CSS for mostly festival page*/
- .event{
-    text-align: center;
-    float: inherit;
-    padding: 25px;
- }
- 
- .event img{
-    width:25%;
-    border: 5px solid blue;
-    float: right;
-    margin-right: 5%;
-    margin-bottom: 10px;
- }
  
  .flex-infocontainer .subheading{
     text-align: center;
@@ -379,9 +388,8 @@ propeties in the class, the width and the margin*/
  .flex-infotextonly .paragraphinfo{
     margin: 1%;
  }
- .flex-infocontainer .flex-infotextonly .paragraphinfo{
-    text-align: center;
- }
+
+
  
  .flex-footer .donatebtn{
    margin-top: 2%;
@@ -419,7 +427,11 @@ form .donatebtn{
     margin-top: 2%;
 }
 
-
+#collab-headding{
+  margin-left: 5%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
 /*Collapsible infomation css
 Hide the checkbox item from page*/
 input[type='checkbox']{
@@ -430,14 +442,12 @@ input[type='checkbox']{
   display: block;
   font-weight: bold;
   font-size: 25px;
-  text-transform: uppercase;
   text-align: left;
-  padding: 1rem;
+  padding: 2%;
   color: #1d236f;
   background: #ed7966;
   cursor: pointer;
   border-radius: 7px;
-  transition: all 0.25s ease-out;
 }
 
 .lbl-toggle::before {
@@ -465,17 +475,30 @@ under eiter*/
 .content h2 h4 p{
   text-align: justify;
 }
-.content img{
+.mainimage-laps{
   height: 300px;
 }
+.content .peoplelibary{
+  padding: 2%;
+  margin-bottom: 0;
+}
+.content .peoplelibary img{
+  width: 70%;  
+}
+.content .peoplelibary .subheading{
+  font-weight: bold;
+  text-align: justify;
+}
 .collapsible-content {
+  /*Max height make so the label can collapse,
+  0 = close*/
   max-height: 0px;
   overflow: hidden;
   background-color: #eebcb4;
   transition: max-height .25s ease-in-out;
 }
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 100vh;
+  max-height: 100%;
 }
 .toggle:checked + .lbl-toggle::before {
   transform: rotate(90deg) translateX(-3px);
@@ -485,6 +508,23 @@ under eiter*/
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+#festivalsub{
+  text-align: center;
+  margin-bottom: 1%;
+}
+#textjustify{
+  text-align: justify;
+  margin-right: 15%;
+}
+#itemcenter{
+  margin-left: 7%;
+}
+
+#supporterimg{
+  height: 500px;
+}
+
 
 
 
@@ -530,4 +570,12 @@ the site changes to fit screen*/
     
    }
     
+  }
+  @media screen and  (max-width: 400px ){
+    #end-edge{
+      margin-right: 20%;
+    }
+    .navbar a.icon{
+      float:none;
+    }
   }
